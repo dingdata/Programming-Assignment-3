@@ -1,5 +1,8 @@
 #Reading from files
 
+#ActivitiesLAbles
+activityLabels = read.csv("UCI HAR Dataset/activity_labels.txt", sep="", header=FALSE)
+
 #Train folders
 trainingData = read.csv("UCI HAR Dataset/train/X_train.txt", sep="", header=FALSE)
 
@@ -18,8 +21,6 @@ testingData[,563] = read.csv("UCI HAR Dataset/test/subject_test.txt", sep="", he
 
 head(testingData)
 
-#ActivitiesLAbles
-activityLabels = read.csv("UCI HAR Dataset/activity_labels.txt", sep="", header=FALSE)
 
 # Read featureData
 featureData = read.csv("UCI HAR Dataset/features.txt", sep="", header=FALSE)
